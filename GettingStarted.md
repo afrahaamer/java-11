@@ -50,7 +50,7 @@ Run the Command Prompt (on Windows) or Open the Terminal (on Mac), and enter `ja
    Java(TM) SE Runtime Environment 18.9 (build 11.i.u+12-LTS)
    Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.i.u+12-LTS, mixed mode)
 ```
->If the version shown is a version existing prior to 11, you will need to [set the Environment Variables](##setting-environment-variables) to the directory of the jdk-11 folder
+>If the version shown is a version existing prior to 11, you will need to [set the Environment Variables](#setting-environment-variables) to the directory of the jdk-11 folder
 
 If the CMD or Terminal output is similar to the above, Congratulations on successfully installing JDK on your machine!
 For any further clarification regarding the installation read through this once more or refer to the official Oracle [documentation](https://docs.oracle.com/en/java/javase/11/install/overview-jdk-installation.html#GUID-8677A77F-231A-40F7-98B9-1FD0B48C346A)
