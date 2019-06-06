@@ -7,10 +7,9 @@ Oracle's OpenJDK (Java Development Kit) version 11 is available for free and can
 
 Both Mac and Windows require administrator privileges to install the JDK.  
 
-The JDK is installed in the directory `C:\Program Files\Java\jdk-11.i.u` on Windows or `` on Mac, where `i` and `u` denote interim and update (followed by a patch number, if any)
+The JDK is installed in the directory `C:\Program Files\Java\jdk-11.i.u` on Windows or  on Mac, where `i` and `u` denote interim and update (followed by a patch number, if any)
 
-
-###Setting Environment Variables
+### Setting Environment Variables
 Environment variables are dynamic and global, they are accessible by all processes of an Operating System, and thus are used in Java store the directories of the executable files like `java.exe` and `javac.exe` to avoid repetition of long commands.
 The variables required are: 
 * JAVA_HOME
@@ -18,7 +17,7 @@ The variables required are:
 * CLASSPATH
 
 
-####On Windows
+#### On Windows
 1. `⊞ Win` + `R` opens the Run Window
 2. Type `sysdm.cpl` and `Enter↵` or click *OK*
 3. Go to *System Properties > Advanced > Environment Variables*
@@ -26,12 +25,12 @@ The variables required are:
 5. Create new variables named `PATH` and `CLASSPATH` with values `%JAVA_HOME%\bin` and `%JAVA_HOME%\lib` respectively.
 <!--https://stackoverflow.com/questions/26864662/the-system-cannot-find-the-file-c-programdata-oracle-java-javapath-java-exe-->
 > If you are installing a new version of Java (e.g. Migrating from Java 8 to 11), make sure that you completely uninstall the previous jdk versions and delete the folder `ProgramData/Oracle/..` since this could cause the error `The system cannot find the file C:\ProgramData\Oracle\Java\javapath\java.exe`
-####On Mac
-#####Temporary - Set for current session
+#### On Mac
+##### Temporary - Set for current session
 1. `Shift ⇧` + `⌘ Command` + `U` opens the Terminal
 2. Type `export JAVA_HOME=/Library/Java/Home` in the Terminal to set `JAVA_HOME`
 3. Type `echo $JAVA_HOME` to finalize set path 
-#####Permanent - Make path persist
+##### Permanent - Make path persist
 1. Open Terminal *(Applications > Utilities > Terminal)*
 2. Type `emacs .profile` and add the following at the end of the `.profile` file
 `
@@ -43,7 +42,7 @@ export JAVA_HOME;
 3. Save & Exit `emacs` (`Ctrl`+`X`, `Ctrl`+`S`; `Ctrl`+`X`, `Ctrl`+`C`)
 
 <!--http://www.sajeconsultants.com/how-to-set-java_home-on-mac-os-x/-->
-###Confirming Installed version of Java 
+### Confirming Installed version of Java 
 
 Run the Command Prompt (on Windows) or Open the Terminal (on Mac), and enter `java -version` and your output should look similar to the following:
 ```
